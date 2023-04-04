@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+    <section class="registration-section">
+        <div class="registration-section-container">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" name="btn-reg" value="Register">
+            </form>
+        </div>
+    </section>
